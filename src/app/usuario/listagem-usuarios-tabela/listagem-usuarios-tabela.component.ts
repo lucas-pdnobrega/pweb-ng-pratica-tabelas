@@ -31,7 +31,7 @@ export class ListagemUsuariosTabelaComponent implements OnInit {
   }
 
   apagar(id: number): void {
-    console.log(id)
+    console.log('apagando')
     this.usuarioService.apagar(id).subscribe(
       apagado => {
         this.mensagemService.alerta(`Usuário ${apagado.nome} removido com sucesso!`)
